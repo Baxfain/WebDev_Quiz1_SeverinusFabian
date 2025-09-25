@@ -1,0 +1,185 @@
+<HTML>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <!-- Icon & Animasi CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+        <title> Severinus Fabian </title>
+        <style type = TEXT/CSS>
+            body {
+                background: linear-gradient(160deg, #07071f, #0b0b11);
+                margin: 0;
+                padding: 70px;
+            }
+            h1{
+                font-family: 'Work Sans', sans-serif;
+                text-align: left;
+                font-weight: 600;
+                font-size: 64px;
+                color:azure ;
+                padding: 0px;
+            }
+            p{
+                font-family: 'Lato', sans-serif;
+                text-align: justify;
+                font-weight: 300;
+                font-size: 18px;
+                color:azure ;
+            }
+
+            #navbar {
+                position: sticky;
+                background: transparent;
+                backdrop-filter: blur(24px);
+                top: 20;
+                left: 0;
+                width: 100%;
+                z-index: 999;
+            }
+
+            .nav { /*navigation class*/
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                list-style: none;
+                justify-content: center;
+                overflow:hidden ;
+                padding: 0px;
+                margin: 0;
+                display: flex;
+                gap: 0px;
+            }
+                .nav li {
+                    display: inline;
+                }  
+                .nav a {
+                    text-decoration: none;
+                    color: azure;
+                    padding: 12px 20px;
+                    border: 1px solid rgba(112, 116, 116, 0.679);
+                    border-radius: 12px;
+                    transition: 0.3s;
+                    }
+                .nav a:hover {
+                    background-color: rgb(29, 22, 52);
+                    color: #198fdd;
+                    font-weight: bold; 
+                }
+
+        .sm { /*social media class*/
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                list-style: none;
+                justify-content: left;
+                overflow: hidden ;
+                padding: 0px;
+                margin: 0;
+                display: flex;
+                gap: 10px;
+                
+            }
+                .sm li {
+                    display: inline;
+                }  
+                .sm a {
+                    display:flex;
+                    text-decoration: none;
+                    color: azure;
+                    padding: 12px 20px;
+                    transition: 0.3s;
+                    }
+                .sm a:hover {
+                    background-color: rgb(29, 22, 52);
+                    color: #198fdd;
+                    font-weight: bold; 
+                }
+                .sm i {
+                    font-size: 24px;
+                    margin-bottom: 6px;
+                    }
+        
+        .container {
+            display: flex;             
+            justify-content: space-between;
+            align-items: center;     
+            gap: 40px;              
+        }
+
+        .text {
+            flex: 1;               
+        }
+
+        .photo {
+            margin-top: 80px;
+            margin-right: 180px;
+            margin-left: 300px;
+        }
+
+            .photo img{
+                max-width: 300px;  
+                max-height: 300px;         
+                border-radius: 12px;        
+                box-shadow: 6px 8px 10px rgba(139, 195, 255, 0.5);
+            }
+
+            .photo img:hover {
+                transform: scale(1.1); 
+            }
+
+        </style>
+
+    </head>
+    <body>
+       <div id = "navbar">
+            <ul class="nav animate__animated animate__fadeInDown">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Hometown</a></li>
+                <li><a href="#">Local Food</a></li>
+                <li><a href="#">Tourist Place</a></li>
+            </ul>
+        </div>
+
+        <div class = "container">
+            <div class = "text animate__animated animate__fadeInUp animate_delay-2s">
+            <br>
+            <h1>
+                Hi, I'm Fabian
+            </h1>
+
+            <p> Here you will get to know about me and everything you should know about my hometown. </p>
+            <p> You can also see my social media, contact, and also my GitHub report XD below.</p>
+            <br><br><br><br>
+            <ul class="sm">
+                <li><a href="https://www.instagram.com/severinus_fabian/" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/severinus-fabian-405232324/" target="_blank" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span></a>
+                </li>
+                <li><a href="mailto:severinusfabian@gmail.com" target="_blank" title="gmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span></a>
+                </li>
+                <li><a href="https://github.com/Baxfain/WebDev_Quiz1_SeverinusFabian.git" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span></a>
+                </li>
+            </ul>
+            </div>
+
+            <div class="photo animate__animated animate__fadeInRight animate_delay-2s">
+            <img src="https://github.com/Baxfain/Images/blob/main/DSC00653.png?raw=true" alt="Foto Profil">
+            </div>
+        </div>
+
+        
+    </body>
+</HTML>
