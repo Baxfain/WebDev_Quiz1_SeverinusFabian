@@ -1,0 +1,343 @@
+<HTML>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <!-- Icon & Animasi CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+        <title> Severinus Fabian </title>
+        <style type = TEXT/CSS>
+            body {
+                background: linear-gradient(160deg, #07071f, #0b0b11);
+                margin: 0;
+                padding: 70px;
+            }
+            h1{
+                font-family: 'Work Sans', sans-serif;
+                text-align: left;
+                font-weight: 600;
+                font-size: 64px;
+                color:azure ;
+                padding: 0px;
+            }
+            p{
+                font-family: 'Lato', sans-serif;
+                text-align: justify;
+                font-weight: 300;
+                font-size: 18px;
+                color:azure ;
+            }
+
+            #navbar {
+                position: sticky;
+                background: transparent;
+                backdrop-filter: blur(24px);
+                top: 20;
+                left: 0;
+                width: 100%;
+                z-index: 999;
+            }
+
+            .nav { /*navigation class*/
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                list-style: none;
+                justify-content: center;
+                overflow:hidden ;
+                padding: 0px;
+                margin: 0;
+                display: flex;
+                gap: 0px;
+            }
+                .nav li {
+                    display: inline;
+                }  
+                .nav a {
+                    text-decoration: none;
+                    color: azure;
+                    padding: 12px 20px;
+                    border: 1px solid rgba(112, 116, 116, 0.679);
+                    border-radius: 12px;
+                    transition: 0.3s;
+                    }
+                .nav a:hover {
+                    background-color: rgb(29, 22, 52);
+                    color: #198fdd;
+                    font-weight: bold; 
+                }
+
+        .sm { /*social media class*/
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                list-style: none;
+                justify-content: left;
+                overflow: hidden ;
+                padding: 0px;
+                margin: 0;
+                display: flex;
+                gap: 10px;
+                
+            }
+                .sm li {
+                    display: inline;
+                }  
+                .sm a {
+                    display:flex;
+                    text-decoration: none;
+                    color: azure;
+                    padding: 12px 20px;
+                    transition: 0.3s;
+                    }
+                .sm a:hover {
+                    background-color: rgb(29, 22, 52);
+                    color: #198fdd;
+                    font-weight: bold; 
+                }
+                .sm i {
+                    font-size: 24px;
+                    margin-bottom: 6px;
+                    }
+        
+        .container {
+            display: flex;              
+            justify-content: space-between;
+            align-items: center;       
+            gap: 40px;              
+            text-align: justify;
+        }
+
+        .text {
+            flex: 2;
+            min-width: 600px;
+        }
+
+        .photo {
+            margin-top: 80px;
+            margin-right: 180px;
+            margin-left: 240px;
+        }
+
+            .photo img{
+                max-width: 300px;  
+                max-height: 300px;         
+                border-radius: 12px;        
+                box-shadow: 6px 8px 10px rgba(139, 195, 255, 0.5);
+            }
+
+        .photo-gallery {
+            display: flex;
+            flex-direction: column;      
+            gap: 40px;            
+            justify-content: flex-start;
+        }
+
+            .photo-gallery img {
+                width: 180px;
+                height: 180px;
+                object-fit: cover ;    
+                border-radius: 12px;
+                box-shadow: 6px 8px 10px rgba(139, 195, 255, 0.5);
+                transition: transform 0.3s;
+            }
+
+            .photo-gallery img:hover {
+                transform: scale(1.3); 
+            }
+
+            .photo-gallery img.active {
+            opacity: 1;
+            transform: scale(1.2);
+            z-index: 2;
+        }
+
+        ul {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            color: azure;
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+        }
+
+        .food-list {
+            list-style: none;
+            padding: 0;
+        }
+            .food-item {
+                margin-bottom: 20px;
+                padding: 15px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                background: #2e2f3f;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+                transition: box-shadow 0.3s ease;
+                cursor: pointer;
+            }
+                .food-item:hover {
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+                    transform: scale(1.05);
+                }
+                .food-item.active {
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+                    transform: scale(1.05);
+                }
+            .food-title {
+                font-size: 20px;
+                font-weight: bold;
+                color: #6b93f8;
+            }
+            .food-desc {
+                margin: 8px 0;
+                line-height: 1.5;
+            }
+            .food-price {
+                color: #009200;
+                font-weight: bold;
+            }
+
+        </style>
+
+    </head>
+    <body>
+       <div id = "navbar">
+            <ul class="nav animate__animated animate__fadeInDown">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Hometown</a></li>
+                <li><a href="#">Local Food</a></li>
+                <li><a href="#">Tourist Place</a></li>
+            </ul>
+        </div>
+
+        <div class = "container">
+            <div class = "text animate__animated animate__fadeInUp animate_delay-2s">
+            <br>
+                <h1>Local Foods</h1>
+                <p>Bogor has many traditional food start from appetizer, main course, to desert. Here are some of the food that you should try at least once when you visit Bogor:</p>
+                <br>
+                <ul class="food-list">
+                    <li id="li1" class="food-item" onmouseover="highlightBoth('img1')" onmouseout="resetBoth()">
+                        <a href="https://www.google.com/search?q=cungkring" target="_blank">
+                    <span class="food-title">Cungkring</span>
+                    <p class="food-desc">
+                        Cungkring is an appetizer made from the tongue, lips, and leg muscles of cow that 
+                        combined with lontong and coated with peanut sauce. 
+                        It has salty and savory flavour with various textures depending on which part of the meat we eat.
+                    </p>
+                    <p class="food-price">Rp20.000 - Rp50.000</p></a>
+                    </li>
+
+                    <li id="li2" class="food-item" onmouseover="highlightBoth('img2')" onmouseout="resetBoth()">
+                        <a href="https://www.google.com/search?q=asinan+bogor" target="_blank">
+                    <span class="food-title">Asinan Bogor</span>
+                    <p class="food-desc">
+                        Asinan bogor is made from various vegetables and fruits that combined with vinegar and also chilli.
+                        It has the combination of sour and spicy with the fresness of the fruits in it. 
+                        Usually it also accompanied by a special crackers made for Asinan Bogor Itself
+                    </p>
+                    <p class="food-price">Rp25.000 - Rp50.000</p></a>
+                    </li>
+
+                    <li id="li3" class="food-item" onmouseover="highlightBoth('img3')" onmouseout="resetBoth()">
+                        <a href="https://www.google.com/search?q=soto+kuning+bogor" target="_blank">
+                    <span class="food-title">Soto Kuning Bogor</span>
+                    <p class="food-desc">
+                        Soto Kuning Bogor is a meat soto made with turmeric and coconut milk as the based of its soup. 
+                        It contains dice shaped meat and sometimes people add tripe and tendon on it.
+                        It has a strong salty and also savory falvour that usually combined with rice to make a perfect combination.
+                    </p>
+                    <p class="food-price">Rp15.000 - Rp40.000</p></a>
+                    </li>
+
+                    <li id="li4" class="food-item" onmouseover="highlightBoth('img4')" onmouseout="resetBoth()">
+                        <a href="https://www.google.com/search?q=soto+mie+bogor" target="_blank">
+                    <span class="food-title">Soto Mie Bogor</span>
+                    <p class="food-desc">
+                        Soto Mie Bogor is a unique soto. When usually people eat soto with rice, this soto is eaten with noodles. Even thought not a few people also eat it with rice.
+                        In it, we can get meat, rissoles, tomatoes, and also radish as it main condiments.
+                        The unique savory and texture combination from all the condiments make this soto become a comfort food for Bogorian.
+                    </p>
+                    <p class="food-price">Rp15.000 - Rp30.000</p></a>
+                    </li>
+                </ul>
+            <br><br><br><br>
+            <ul class="sm">
+                <li><a href="https://www.instagram.com/severinus_fabian/" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/severinus-fabian-405232324/" target="_blank" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span></a>
+                </li>
+                <li><a href="mailto:severinusfabian@gmail.com" target="_blank" title="gmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span></a>
+                </li>
+                <li><a href="https://github.com/Baxfain/WebDev_Quiz1_SeverinusFabian.git" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span></a>
+                </li>
+            </ul>
+            </div>
+            
+            
+
+            <div class="photo animate__animated animate__fadeInRight animate_delay-2s">
+                <div class="photo-gallery">
+                    <div class="photo-gallery">
+                        <a href="https://www.google.com/search?q=cungkring" target="_blank">
+                            <img id="img1" src="https://github.com/Baxfain/Images/blob/main/Cungkring.jpeg?raw=true" alt="Foto 1-cungkring"
+                            onmouseover="highlightBoth('li1')" onmouseout="resetBoth()">
+                        </a>
+
+                        <a href="https://www.google.com/search?q=asinan+bogor" target="_blank">
+                            <img id="img2" src="https://github.com/Baxfain/Images/blob/main/Asinan.jpeg?raw=true" alt="Foto 2-asinan"
+                            onmouseover="highlightBoth('li2')" onmouseout="resetBoth()">
+                        </a>
+
+                        <a href="https://www.google.com/search?q=soto+kuning+bogor" target="_blank">
+                            <img id="img3" src="https://github.com/Baxfain/Images/blob/main/Soto.jpeg?raw=true" alt="Foto 3-soto kuning"
+                            onmouseover="highlightBoth('li3')" onmouseout="resetBoth()">
+                        </a>
+
+                        <a href="https://www.google.com/search?q=soto+mie+bogor" target="_blank">
+                            <img id="img4" src="https://github.com/Baxfain/Images/blob/main/Soto_Mie_Bogor_2.JPG?raw=true" alt="Foto 4-soto mie"
+                            onmouseover="highlightBoth('li4')" onmouseout="resetBoth()">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const mapping = {
+                    li1: "img1",
+                    li2: "img2",
+                    li3: "img3",
+                    li4: "img4"
+                };
+
+                function highlightBoth(id) {
+                    document.querySelectorAll('.food-item').forEach(item => item.classList.remove('active'));
+                    document.querySelectorAll('.photo-gallery img').forEach(img => img.classList.remove('active'));
+                    
+                    document.getElementById(id).classList.add('active');
+                    document.getElementById(mapping[id] || id).classList.add('active');
+                }
+
+                function resetBoth() {
+                    document.querySelectorAll('.food-item').forEach(item => item.classList.remove('active'));
+                    document.querySelectorAll('.photo-gallery img').forEach(img => img.classList.remove('active'));
+                }
+            </script>
+        
+    </body>
+</HTML>
