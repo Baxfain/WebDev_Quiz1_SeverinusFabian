@@ -1,0 +1,240 @@
+<HTML>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <!-- Icon & Animasi CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+        <title> Severinus Fabian </title>
+        <style type = TEXT/CSS>
+            body {
+                background: linear-gradient(160deg, #07071f, #0b0b11);
+                margin: 0;
+                padding: 70px;
+            }
+            h1{
+                font-family: 'Work Sans', sans-serif;
+                text-align: left;
+                font-weight: 600;
+                font-size: 64px;
+                color:azure ;
+                padding: 0px;
+            }
+            p{
+                font-family: 'Lato', sans-serif;
+                text-align: justify;
+                font-weight: 300;
+                font-size: 18px;
+                color:azure ;
+            }
+
+            #navbar {
+                position: sticky;
+                background: transparent;
+                backdrop-filter: blur(24px);
+                top: 20;
+                left: 0;
+                width: 100%;
+                z-index: 999;
+            }
+
+            .nav { /*navigation class*/
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                list-style: none;
+                justify-content: center;
+                overflow:hidden ;
+                padding: 0px;
+                margin: 0;
+                display: flex;
+                gap: 0px;
+            }
+                .nav li {
+                    display: inline;
+                }  
+                .nav a {
+                    text-decoration: none;
+                    color: azure;
+                    padding: 12px 20px;
+                    border: 1px solid rgba(112, 116, 116, 0.679);
+                    border-radius: 12px;
+                    transition: 0.3s;
+                    }
+                .nav a:hover {
+                    background-color: rgb(29, 22, 52);
+                    color: #198fdd;
+                    font-weight: bold; 
+                }
+
+        .sm { /*social media class*/
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                list-style: none;
+                justify-content: left;
+                overflow: hidden ;
+                padding: 0px;
+                margin: 0;
+                display: flex;
+                gap: 10px;
+                
+            }
+                .sm li {
+                    display: inline;
+                }  
+                .sm a {
+                    display:flex;
+                    text-decoration: none;
+                    color: azure;
+                    padding: 12px 20px;
+                    transition: 0.3s;
+                    }
+                .sm a:hover {
+                    background-color: rgb(29, 22, 52);
+                    color: #198fdd;
+                    font-weight: bold; 
+                }
+                .sm i {
+                    font-size: 24px;
+                    margin-bottom: 6px;
+                    }
+        
+        .container {
+            display: flex;           
+            justify-content: space-between;
+            align-items: center;       
+            gap: 40px;               
+            text-align: justify;
+        }
+
+        .text {
+            flex: 2;  
+            min-width: 600px;
+        }
+
+        .photo {
+            margin-top: 80px;
+            margin-right: 180px;
+            margin-left: 240px;
+        }
+
+            .photo img{
+                max-width: 300px;  
+                max-height: 300px;         
+                border-radius: 12px;        
+                box-shadow: 6px 8px 10px rgba(139, 195, 255, 0.5);
+            }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 150px);
+            display: flex;
+            flex-wrap: wrap;      
+            gap: 16px;            
+            justify-content: flex-start;
+        }
+
+            .photo-gallery img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover ;    
+                border-radius: 12px;
+                box-shadow: 6px 8px 10px rgba(139, 195, 255, 0.5);
+                transition: transform 0.3s;
+            }
+
+            .photo-gallery img:hover {
+                transform: scale(1.3); 
+            }
+
+        </style>
+
+    </head>
+    <body>
+       <div id = "navbar">
+            <ul class="nav animate__animated animate__fadeInDown">
+                <li><a href="https://severinusfabian.vercel.app/home.html">Home</a></li>
+                <li><a href="https://namadomain.vercel.app/profile.html">Profile</a></li>
+                <li><a href="https://namadomain.vercel.app/hometown.html">Hometown</a></li>
+                <li><a href="https://namadomain.vercel.app/food.html">Local Food</a></li>
+                <li><a href="https://namadomain.vercel.app/tourist.html">Tourist Place</a></li>
+            </ul>
+        </div>
+
+        <div class = "container">
+            <div class = "text animate__animated animate__fadeInUp animate_delay-2s">
+            <br>
+            <h1>
+                Get to Know Me
+            </h1>
+
+            <p> 
+            My name is Severinus Fabian Tanuwidjaja. You can call me Fabian for Short. I was born in 2005.
+            I'm originally from Bogor but now living in Surabaya as an Informatics student at Institut Teknologi Sepuluh Nopember Surabaya.
+            <br><br>
+            Even tho I'm an Informatics student, many passions of mine is actually kind of deviate from it. Not that I don't like coding or else, but I just love many things.
+            I love music, public speaking, join organization, and many more. And that's what makes me myself, a generalist that decided to step into digital world as my foundation.
+            <br><br>
+            Here, you might see my milestone and my future projects. 
+            </p>
+            <br><br><br><br>
+            <ul class="sm">
+                <li><a href="https://www.instagram.com/severinus_fabian/" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/severinus-fabian-405232324/" target="_blank" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span></a>
+                </li>
+                <li><a href="mailto:severinusfabian@gmail.com" target="_blank" title="gmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span></a>
+                </li>
+                <li><a href="https://github.com/Baxfain/WebDev_Quiz1_SeverinusFabian.git" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span></a>
+                </li>
+            </ul>
+            </div>
+            
+            
+
+            <div class="photo animate__animated animate__fadeInRight animate_delay-2s">
+                <div class="photo-gallery">
+                    <div class="photo-gallery">
+                        <a href="https://drive.google.com/file/d/1sLBEzAHV90EP7ZHp3Bf-88YfL0DU5V6C/view?usp=sharing" target="_blank">
+                            <img src="https://github.com/Baxfain/Images/blob/main/WhatsApp%20Image%202025-08-02%20at%2016.03.19_3e1c3d13.jpg?raw=true" alt="Foto 1-sirenia">
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/your-link-debate/view?usp=sharing" target="_blank">
+                            <img src="https://github.com/Baxfain/Images/blob/main/WhatsApp%20Image%202024-12-08%20at%2015.22.27_f1dac0a8.jpg?raw=true" alt="Foto 2-debate">
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/your-link-mbc/view?usp=sharing" target="_blank">
+                            <img src="https://github.com/Baxfain/Images/blob/main/WhatsApp%20Image%202024-12-02%20at%2007.21.02_6b579752.jpg?raw=true" alt="Foto 3-MBC">
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/your-link-fotodiri/view?usp=sharing" target="_blank">
+                            <img src="https://github.com/Baxfain/Images/blob/main/DSC01543.jpeg?raw=true" alt="Foto 4-Foto diri">
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <ul class = "sm">
+                    <li><a href="https://drive.google.com/file/d/1sLBEzAHV90EP7ZHp3Bf-88YfL0DU5V6C/view?usp=sharing" target="_blank" title="CV">
+                        <i class="fa-solid fa-file"></i>
+                        <span>Resume</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </body>
+</HTML>
